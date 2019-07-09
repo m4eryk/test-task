@@ -1,3 +1,179 @@
-h1{
-    color: rgb(199, 42, 42);
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(#6E70AB 5%, transparent 20%) 0 0, radial-gradient(#6E70AB 1%, transparent 1%) 50px 50px;
+    background-color: #fff;
+    background-size: 5px 5px;
 }
+button, input{
+    height: 28px;
+    border-radius: 0;
+    outline: none;
+    transition: 0.5s;
+}
+input{
+    color: black;
+    padding-left: 10px;
+    border: 1px solid rgb(100, 102, 173);
+}
+button{
+    color: black;
+    border: 1px solid rgb(97, 99, 165);
+    background-color: rgb(229, 228, 247);
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: rgb(202, 200, 233);
+}
+button:active{
+    outline:none;
+    cursor: pointer;
+    color: white;
+    border: 1px solid  rgb(97, 99, 165);
+    background-color: rgb(202, 200, 233);
+}
+.dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 280px;
+    border: 1px solid rgb(97, 99, 165);
+    background-color: #F0EEFB;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.445);
+}
+.header-dialog{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 790px;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(97, 99, 165);
+}
+.header-dialog span{
+    text-align: left;
+    padding-left: 10px;
+}
+.header-dialog button{
+    margin-right: 5px;
+}
+.content-dailog{
+    width: 790px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.content-dailog img{
+    width: 14px;
+    height: 14  px;
+}
+.content-dailog i {
+    margin-right: 2px;
+}
+.content-dailog .box{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+form{
+    width: 790px;
+}
+form .btn-group{
+    width: 85%;
+    margin-left: 127px;
+    margin-bottom: 10px;
+}
+.btn-group button{
+    margin-right: 10px;
+}
+.box .exodus{
+    width: 86%;
+    border: 1px solid rgb(97, 99, 165);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.box label{
+    text-align: right;
+    margin-right: 8px;
+    width: 15%;
+}
+.box input{
+    width: 85%;
+}
+.exodus button{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.exodus input{
+    color: black;
+    background-color: #F0EEFB;
+    border: none;
+}
+.footer-dialog{
+    width: 800px;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #DCDBEE;
+    border-top: 1px solid rgb(185, 185, 189);
+}
+.footer-dialog i{ 
+    margin-right: 5px;
+}
+.confirmation button{
+    outline: 1px solid white;
+    outline-offset: -2px;
+    color: white;
+    background-color: rgb(97, 99, 165);
+}
+.confirmation button:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(97, 99, 165);
+}
+.confirmation button:active{
+    cursor: pointer;
+    color: black;
+    border: 1px solid rgb(97, 99, 165);
+    background-color: #DCDBEE;
+}
+.footer-dialog .control{
+    margin:  6px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-dialog img{
+    width: 10px;
+    height: 10px;
+}
+.footer-dialog .resize{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.footer-dialog img:hover{
+    cursor: nw-resize;
+}
+

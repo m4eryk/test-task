@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/166cc41c29.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Webpack work</h1>
+    <div class="dialog">
+        <div class="header-dialog">
+            <span>План уничтожения пирожков</span>
+            <div class="control">
+                <button><i class="far fa-window-maximize"></i></button>
+                <button><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="content-dailog">
+            <form >
+                <div class="box">
+                    <label for="filling">Начинка:</label>
+                    <input type="text" placeholder="Введите значения..." id="filling" style=" font-style: italic">
+                </div>
+                <div class="box">
+                    <label for="form-factor">Форм-фактор:</label>
+                    <input type="text" id="form-factor" value="Моноблок">
+                </div>
+                <div class="box">
+                    <label for="exodus">Исход:</label>
+                    <div class="exodus">
+                        <input type="text" disabled id="exodus" value="Благоприятный">
+                        <div class="control">
+                            <button><i class="fas fa-eraser"></i></button><button>&hellip;</button>
+                        </div>
+                   </div>                  
+                </div>
+                <div class="btn-group">
+                    <button><i class="fas fa-plus" style="color: green"></i>Добавить пирожок</button>
+                    <button>И джем еще</button>
+                    <button><img src="https://findicons.com/files/icons/2152/snowish/128/printer.png" alt="print"></button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-dialog">
+            <div class="control">
+                <button><i class="fas fa-arrow-right fa-1x" style="color: green"></i><i class="fas fa-male" style="color: red"></i>Передать человеку в красном</button>
+                <div class="confirmation">
+                    <button>Выполнить</button>
+                    <button>Отменить</button>
+                </div>
+            </div>
+            <div class="resize">
+                <img src="static/img/size.png" alt="size">
+            </div>
+        </div>
+</div>
 </body>
 </html>
